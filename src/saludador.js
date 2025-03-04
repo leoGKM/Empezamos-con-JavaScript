@@ -6,7 +6,7 @@ function saludar(nombre,genero, edad, idioma){
               } else {
                 return "Sr. " + nombre;
               }
-          } else if (genero === "F") {
+        } else if (genero === "F") {
             if (edad < 30) {
                 return "señorita " + nombre;
               } else {
