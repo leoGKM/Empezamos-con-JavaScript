@@ -1,9 +1,11 @@
 import saludar from "./saludador.js";
  
+const nombre_input = document.querySelector("#nombre");
 const form = document.querySelector("#saludar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  div.innerHTML = "<p>" + saludar() + ".</p>";
+  const nombre = nombre_input.value;
+  div.innerHTML = "<p> Hola " + saludar(nombre) + ".</p>";
 });

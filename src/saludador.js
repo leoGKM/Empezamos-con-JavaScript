@@ -1,4 +1,4 @@
-function saludar(){
-    return "Hola";
+function saludar(nombre){
+    return nombre;
 }
 export default saludar;
